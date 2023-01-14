@@ -1,0 +1,4156 @@
+*{
+    font-family: 'Roboto'
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    opacity: 1;
+    background:#30353b;
+    border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+    background:#30353b;
+    border-radius: 5px;
+}
+// ===================================header===================================
+.tooltip{
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0px !important;
+    .tooltip-inner{
+        border-radius: 0px !important;
+    }
+}
+.header-nav-bar{
+    background-color: #fefefe !important;
+    height: 93px;
+    width: 100%;
+    padding: 0px;
+    z-index: 100 !important;
+    box-shadow: none;
+    .header-top-bar{
+        height: 38px !important;
+        background-color: #fff !important;
+        width: 100% !important;
+        display: flex;
+        .start{
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .end{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .header-top-bar-item{
+            cursor: pointer;
+            border-right: #fff solid 1px;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            padding: 0 12px;
+            height: 100%;
+            background-color: #174b73;
+            vertical-align: bottom;
+            text-align: left;
+            font-size: 10px;
+            line-height: 11px;
+            color: #fefefe;
+            box-shadow: inset 0 50px 25px -15px #216ca6;
+            transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+            .name{
+                margin-left: 10px;
+                font-size: 10px;
+                text-transform: uppercase;
+                b{
+                    display: block;
+                    font-weight: 400;
+                }
+            }
+        }
+        
+        .big{
+            padding: 0 17px;
+        }
+        
+        .small{
+            padding: 0 10px !important;
+            box-shadow: inset 0 50px 25px -15px #378ecc !important;
+            transition: background-color .3s ease, box-shadow .3s ease !important;
+            background-color: #0e5d99 !important;
+        }
+        .login{
+            font-weight: 700;
+        }
+        .registration{
+            font-weight: 700;
+            height: 100%;
+            align-items: center;
+            padding: 0 7px;
+            background-color: #648626;
+            text-transform: uppercase;
+            line-height: 10px;
+            box-shadow:inset 0 50px 25px -15px #93c638 !important;
+        }
+        .registration:hover{
+            background-color: #93c638;    
+        }
+        .small:hover{
+            border-bottom: none !important;
+            box-shadow: none !important;
+            background-color: #1f72af !important;
+        }
+        .dropdown{
+            .name{
+                margin:0px 5px;
+                font-size: 10px;
+                text-transform: uppercase;
+                b{
+                    display: block;
+                    font-weight: 400;
+                }
+            }
+        }
+        .bonus{
+            height: 100%;
+            align-items: center;
+            padding: 0 7px;
+            background-color: #648626;
+            text-transform: uppercase;
+            line-height: 10px;
+            box-shadow:inset 0 50px 25px -15px #93c638 !important;
+            b{
+                display: inline-block !important;
+                vertical-align: top !important;
+                font-size: 16px !important;
+            }
+            i{
+                margin-top: 3px;
+                text-align: center;
+                font-size: 10px;
+                font-style: normal;
+                display: block;
+            }
+        }
+
+        .small:hover{
+            background-color: #93c638;    
+        }
+
+        .header-top-bar-item:hover{
+            border-bottom: none;
+            box-shadow: none;
+            background-color: #1a5685;
+        }
+    }
+    
+    .header-bottom-bar{
+        position: relative;
+        box-sizing: border-box;
+        padding: 0 10px;
+        min-width: 100%;
+        height: 53px;
+        border-bottom: 2px solid #fff;
+        border-top: 1px solid #fff;
+        background-color: #1a5685;
+        transition: 0.3s ease;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        .header-nav-bar-menu{
+            display: flex;
+            justify-content: center;
+            width: calc(100% - 170px);
+        }
+        .header-nav-bar-item-group {
+            width: auto !important ;    
+            display: inline-flex;
+        }
+        .header-nav-bar-item{
+            align-items: center;
+            padding: 0 16px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .header-nav-bar-item:hover{
+            span{
+                transition: color .3s;
+                color:#66c4ff !important;
+            }
+        }
+        .header-nav-bar-item-active{
+            span{
+                transition: color .3s;
+                color:#66c4ff !important;
+            }
+        }
+        
+    }
+}
+// ===================================header===================================
+
+// ===================================content-wrapper===================================
+body .content .content-wrapper {
+    margin-top: 0px !important;
+    padding: 0px !important;
+}
+
+.fp-header .col-12 {
+    padding: 0px !important;
+}
+.fp-header-image {
+    overflow: hidden;
+    padding: 1.25em .9375em 0em !important;
+    height: 25vw;
+}
+.fp-header-image .swiper-container {
+    height: 100%;
+}
+.awssld--foldOutAnimation{
+    height: 100% !important;
+}
+.awssld{
+    height: 100% !important;
+}
+// ===================================content-wrapper===================================
+
+// ===================================casino===================================
+.casino-main{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-bottom: 1.25em;
+    margin: 1.25em .9375em 0em;
+    @media (max-width: 1449px){
+        .casino-filter {
+            width: 18.75em;
+            min-width: 18.75em;
+        }
+    }
+    .casino-filter{
+        box-sizing: border-box;
+        width: 24.375em;
+        min-width: 24.375em;
+        border: 1px solid #30353b;
+        background-image: url("../img/filter-bg.png");
+        margin-right: .9375em;
+        .casino-filter__clear{
+            display: block;
+            cursor: pointer;
+            padding: 1.07143em;
+            width: 100%;
+            outline: none;
+            border: none;
+            box-sizing: border-box;
+            background: none;
+            text-align: right;
+            font-size: .875em;
+            font-weight: 300;
+            color: #999;
+            transition: color 0.3s;
+        }
+        .casino-filter__controls {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            padding: 1.25em;
+            .controls__item{
+                opacity: 0.2;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                background: none;
+                font-size: inherit;
+                transition: opacity 0.3s linear;
+                .controls__img {
+                    width: 4em;
+                    height: 4em;
+                    margin: 0 auto 1.875em;
+                    background-repeat: no-repeat;
+                    text-transform: uppercase;
+                    fill: #999;
+                }
+                .controls__desc {
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: .75em;
+                    color: #999;
+                }
+            }
+        }
+        .casino-filter__category{
+            .casino-filter__title {
+                box-sizing: border-box;
+                padding: .5em;
+                width: 100%;
+                margin: 0;
+                border-top: 1px solid #30353b;
+                border-bottom: 1px solid #30353b;
+                background-color: #252a30;
+                text-align: center;
+                outline: none;
+                text-transform: uppercase;
+                font-size: 1em;
+                font-weight: 400;
+                color: #fff;
+            }
+            .casino-filter__list{
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                padding: 2.5em;
+                text-transform: uppercase;
+                font-size: .75em;
+                color: #999;
+                @media (max-width: 1449px){
+                    .casino-filter__label {
+                        font-size: .9375em;
+                    }
+                }
+                .casino-filter__label{
+                    width: 50%;
+                    margin-top: .45em;
+                    margin-bottom: .45em;
+                    .casino-filter__radio{
+                        opacity: 0;
+                        position: absolute;
+                    }
+                    .casino-filter__radio-desc{
+                        display: block;
+                        position: relative;
+                        box-sizing: border-box;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        color: #30353b;
+                        transition: color 0.3s linear;
+                        padding-left: 1.875em;
+                    }
+                    .casino-filter__radio-desc::after {
+                        content: '';
+                        position: absolute;
+                        top: .25em;
+                        width: .875em;
+                        height: .875em;
+                        border-radius: 50%;
+                        left: 0;
+                        opacity: 1;
+                        background-color: #30353b;
+                        transition: background-color 0.2s linear;
+                    }
+                    .casino-filter__radio-desc-selected{
+                        display: block;
+                        position: relative;
+                        box-sizing: border-box;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        color: #90c534;
+                        transition: color 0.3s linear;
+                        padding-left: 1.875em;
+                    }
+                    .casino-filter__radio-desc-selected::after {
+                        content: '';
+                        position: absolute;
+                        top: .25em;
+                        width: .875em;
+                        height: .875em;
+                        border-radius: 50%;
+                        left: 0;
+                        opacity: 1;
+                        background-color: #90c534;
+                        transition: background-color 0.2s linear;
+                    }
+                }
+            }
+        }
+        .casino-filter__providers{
+            .casino-filter__title{
+                box-sizing: border-box;
+                padding: .5em;
+                width: 100%;
+                margin: 0;
+                border-top: 1px solid #30353b;
+                border-bottom: 1px solid #30353b;
+                background-color: #252a30;
+                text-align: center;
+                outline: none;
+                text-transform: uppercase;
+                font-size: 1em;
+                font-weight: 400;
+                color: #fff;
+            }
+            .providers__search{
+                box-sizing: border-box;
+                padding: .625em 1.5625em;
+                width: 100%;
+                outline: 0;
+                border: 0;
+                border-bottom: 1px solid #30353b;
+                background: 0;
+                color: #999;
+            }
+            .ps-container{
+                height: 33.75em;
+                -ms-touch-action: auto;
+                touch-action: auto;
+                overflow: hidden!important;
+                overflow-y: auto !important;
+                .providers__list {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    padding: 1em;
+                }
+                .providers__item {
+                    opacity: 0.85;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    width: calc(33.33% - .25em);
+                    height: 4.625em;
+                    margin: .125em;
+                    border-bottom: .1875em solid rgba(110,148,44,0.1);
+                    background: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%, rgba(110,148,44,0.2) 100%);
+                    transition: border 0.2s ease-in-out, opacity 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+                    transition: filter 0.2s ease-in-out, border 0.2s ease-in-out, opacity 0.2s ease-in-out;
+                    transition: filter 0.2s ease-in-out, border 0.2s ease-in-out, opacity 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+                    -webkit-filter: grayscale(1) contrast(0.5);
+                    filter: grayscale(1) contrast(0.5);
+                    cursor: pointer;
+                    outline: 0;
+                    word-break: break-all;
+                    text-align: center;
+                    padding: 0.1em;
+                }
+                .providers__item-selected{
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    width: calc(33.33% - .25em);
+                    height: 4.625em;
+                    margin: .125em;
+                    opacity: 1;
+                    border-bottom: .1875em solid #90c534;
+                    -webkit-filter: none;
+                    filter: none;
+                    background: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%, rgba(110,148,44,0.2) 100%);
+                    transition: border 0.2s ease-in-out, opacity 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+                    transition: filter 0.2s ease-in-out, border 0.2s ease-in-out, opacity 0.2s ease-in-out;
+                    transition: filter 0.2s ease-in-out, border 0.2s ease-in-out, opacity 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
+                    cursor: pointer;
+                    outline: 0;
+                    word-break: break-all;
+                    text-align: center;
+                    padding: 0.1em;
+                }
+            }
+        }
+    }
+    @media (max-width: 1449px){
+        .casino-content {
+            width: calc(100% - 19.6875em);
+        }
+    }
+    .casino-content {
+        width: calc(100% - 25.25em);
+        background-color: #151b20;
+        .casino-content__search-wrap{
+            position: relative;
+            width: 16.5625em;
+            margin: .625em;
+            .casino-content__search-icon{
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 1em;
+                font-family: FontAwesome;
+                font-size: .75em;
+                color: #fff;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+            .casino-content__search{
+                box-sizing: border-box;
+                padding: .3125em .625em .3125em 2.1875em;
+                width: 100%;
+                outline: 0;
+                border: 1px solid #30353b;
+                background-color: rgba(0,0,0,0.5);
+                font-size: 1em;
+                color: #999;
+            }
+        }
+        .casino-games{
+            position: relative;
+            padding-bottom: 6.25em;
+            color: #fff;
+            .casino-games__wrap{
+                width: 100%;
+                overflow: hidden;
+                .casino-games__nav{
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    box-sizing: border-box;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                    justify-content: space-between;
+                    padding: 0em .625em 0em .3125em;
+                    width: 100%;
+                    min-width: 100%;
+                    margin: .4375em 0em;
+                    border-left: .125em solid #82b031;
+                    .casino-games__title{
+                        padding: 0;
+                        margin: .3125em;
+                        text-transform: uppercase;
+                        font-size: 1em;
+                        font-weight: 400;
+                    }
+                }
+                .casino-games__list {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    position: relative;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    min-height: 12.5em;
+                    .casino-games__item-wrap {
+                        min-width: 20%;
+                        width: 20%;
+                        padding: .125em;
+                        box-sizing: border-box;
+                        .casino-games__bg {
+                            background-image: url(../img/pages/blankslot.jpg);
+                            background-size: cover;
+                            .casino-games__item {
+                                box-sizing: border-box;
+                                border: 1px solid #30353b;
+                                position: relative;
+                                text-align: center;
+                                background-size: cover;
+                                background-position: center;
+                                padding-top: 60%;
+                                .casino-games__overlay:hover {
+                                    opacity: 1;
+                                    .casino-games__play-wrap:before{
+                                        -webkit-animation: play-rotate 1.5s infinite linear;
+                                        animation: play-rotate 1.5s infinite linear;
+                                    }
+                                    .casino-games__play-wrap:after {
+                                        -webkit-animation: play-rotate-reverse 1.5s infinite linear !important;
+                                        animation: play-rotate-reverse 1.5s infinite linear !important;
+                                    }
+                                }
+                                .casino-games__overlay {
+                                    z-index: 1;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    color: #fff;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: rgba(0,0,0,0.7);
+                                    box-sizing: border-box;
+                                    opacity: 0;
+                                    transition: opacity 0.3s linear;
+                                    .casino-games__buttons {
+                                        -webkit-align-items: center;
+                                        -ms-flex-align: center;
+                                        align-items: center;
+                                        display: -webkit-flex;
+                                        display: -ms-flexbox;
+                                        display: flex;
+                                        -webkit-justify-content: space-around;
+                                        -ms-flex-pack: distribute;
+                                        justify-content: space-around;
+                                        width: 100%;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        -webkit-transform: translateX(-50%) translateY(-50%);
+                                        transform: translateX(-50%) translateY(-50%);
+                                        .casino-games__fav {
+                                            left: 15%;
+                                        }
+                                        .casino-games__fav {
+                                            position: absolute;
+                                            z-index: 100;
+                                            cursor: pointer;
+                                            width: 1.5625em;
+                                            height: 1.5625em;
+                                            top: 50%;
+                                            -webkit-transform: translateX(-50%) translateY(-50%);
+                                            transform: translateX(-50%) translateY(-50%);
+                                        }
+                                        .casino-games__play-wrap {
+                                            width: 6em;
+                                            height: 6em;
+                                            position: absolute;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            top: 50%;
+                                            left: 50%;
+                                            -webkit-transform: translateX(-50%) translateY(-50%);
+                                            transform: translateX(-50%) translateY(-50%);
+                                            svg{
+                                                fill: white;
+                                            }
+                                        }
+                                        .casino-games__play-wrap:before{
+                                            content: '';
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 6em;
+                                            height: 6em;
+                                            display: inline-block;
+                                            border-radius: 50%;
+                                            border-left: .1875em solid #fff;
+                                            border-top: .1875em solid transparent;
+                                            border-bottom: .1875em solid transparent;
+                                            border-right: .1875em solid #fff;
+                                            opacity: 1;
+                                        }
+                                        .casino-games__play-wrap:after {
+                                            content: '';
+                                            position: absolute;
+                                            top: .5em;
+                                            left: .5em;
+                                            display: inline-block;
+                                            width: 5em;
+                                            height: 5em;
+                                            opacity: 1;
+                                            border-radius: 50%;
+                                            border-right: .1875em solid transparent !important;
+                                            border-top: .1875em solid #90c534 !important;
+                                            border-bottom: .1875em solid #90c534 !important;
+                                            border-left: .1875em solid transparent !important;
+                                        }
+                                        .casino-games__play {
+                                            z-index: 100;
+                                            cursor: pointer;
+                                            display: inline-block;
+                                            color: #fff;
+                                            margin-left: 5px;
+                                            transition: 0.2s linear;
+                                        }
+                                        .casino-games__play:hover, .casino-games__fav:hover{
+                                            color: #90c534;
+                                            fill: #90c534;
+                                        }
+                                        @-moz-keyframes play-rotate { 
+                                            100% { -moz-transform: rotate(360deg); } 
+                                        }
+                                        @-webkit-keyframes play-rotate { 
+                                            100% { -webkit-transform: rotate(360deg); } 
+                                        }
+                                        @keyframes play-rotate { 
+                                            100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+                                        }
+                                        @-moz-keyframes play-rotate-reverse { 
+                                            0% { -moz-transform: rotate(360deg); } 
+                                            100% { -moz-transform: rotate(0deg); } 
+                                        }
+                                        @-webkit-keyframes play-rotate-reverse { 
+                                            0% { -webkit-transform: rotate(360deg); } 
+                                            100% { -webkit-transform: rotate(0deg); } 
+                                        }
+                                        @keyframes play-rotate-reverse { 
+                                            0% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+                                            100% { -webkit-transform: rotate(0deg); transform:rotate(0deg); }
+                                        }
+                                    }
+                                    .casino-games__playfree-wrap {
+                                        position: absolute;
+                                        bottom: .625em;
+                                        left: 0;
+                                        width: 100%;
+                                        text-align: center;
+                                        cursor: pointer;
+                                        .casino-games__playfree {
+                                            color: #fff;
+                                            text-transform: uppercase;
+                                            font-size: .875em;
+                                            transition: color 0.3s linear, border 0.3s linear;
+                                            outline: 0;
+                                            border-bottom: 1px solid #fff;
+                                            padding: 0;
+                                            margin-bottom: 2%;
+                                            display: inline-block;
+                                        }
+                                        .casino-games__playfree:hover{
+                                            color: #90c534;
+                                            border-bottom: 1px solid #90c534;
+                                        }
+                                    }
+                                }
+                                .casino-games__ribbons {
+                                    display: -webkit-flex;
+                                    display: -ms-flexbox;
+                                    display: flex;
+                                    -webkit-flex-direction: column;
+                                    -ms-flex-direction: column;
+                                    flex-direction: column;
+                                    -webkit-align-items: flex-end;
+                                    -ms-flex-align: end;
+                                    align-items: flex-end;
+                                    position: absolute;
+                                    right: 0;
+                                    top: .3125em;
+                                    .casino-games__ribbon {
+                                        text-transform: uppercase;
+                                        font-size: .6875em;
+                                        height: 2.09091em;
+                                        display: -webkit-flex;
+                                        display: -ms-flexbox;
+                                        display: flex;
+                                        -webkit-align-items: center;
+                                        -ms-flex-align: center;
+                                        align-items: center;
+                                        -webkit-justify-content: center;
+                                        -ms-flex-pack: center;
+                                        justify-content: center;
+                                        padding: 0em .90909em;
+                                        position: relative;
+                                        color: #fff;
+                                        margin-bottom: .45455em;
+                                    }
+                                    .casino-games__ribbon::before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 0;
+                                        right: 100%;
+                                        border-left: 1.18182em solid transparent;
+                                    }
+                                    .casino-games__ribbon--orange {
+                                        background: linear-gradient(to left, #931602 0%, #c54e2f 100%);
+                                    }
+                                    .casino-games__ribbon--green {
+                                        background: linear-gradient(to left, #5f9008 0%, #8fc52f 100%);
+                                    }
+                                    .casino-games__ribbon--gold {
+                                        background: linear-gradient(to left, #db5605 0%, #ed9c33 100%);
+                                    }
+                                    .casino-games__ribbon--blue {
+                                        background: linear-gradient(to right, #36689c -25%, #97b5f0, #36689c 125%);
+                                    }
+                                    .casino-games__ribbon--orange::before {
+                                        border-bottom: 2.09091em solid #c54e2f;
+                                    }
+                                    .casino-games__ribbon--green::before {
+                                        border-bottom: 2.09091em solid #8fc52f;
+                                    }
+                                    .casino-games__ribbon--gold::before {
+                                        border-bottom: 2.09091em solid #ed9c33;
+                                    }
+                                    .casino-games__ribbon--blue::before {
+                                        border-bottom: 2.09091em solid #5883b9;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .live-casino-games__item-wrap{
+                        display: block;
+                        box-sizing: border-box;
+                        padding: .125em;
+                        width: 20%;
+                        color: #fff;
+                        cursor: pointer;
+                        .live-casino-games__bg{
+                            background-image: url(../img/pages/casino-default-bg.jpg);
+                            background-position: center;
+                            background-size: cover;
+                            .live-casino-games__item {
+                                position: relative;
+                                box-sizing: border-box;
+                                padding-top: 65%;
+                                border: 1px solid #30353b;
+                                background-position: center;
+                                background-size: cover;
+                                .live-casino-games__window {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    box-sizing: border-box;
+                                    width: 100%;
+                                    height: 100%;
+                                    
+                                    .live-casino-games__prov {
+                                        position: absolute;
+                                        top: 15%;
+                                        left: 2%;
+                                        width: 35%;
+                                        -webkit-transform: scale(0.9);
+                                        transform: scale(0.9);
+                                        transition: -webkit-transform 0.2s ease-in-out;
+                                        transition: transform 0.2s ease-in-out;
+                                        transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+                                    }
+                                    .live-casino-games__langs {
+                                        position: absolute;
+                                        top: 3%;
+                                        left: 2%;
+                                        .live-casino-games__lang {
+                                            width: 1.25em;
+                                            margin-right: .3125em;
+                                        }
+                                    }
+                                    .live-casino-games__provider {
+                                        position: absolute;
+                                        top: 3%;
+                                        right: 2%;
+                                        width: 1.3125em;
+                                    }
+                                    .live-casino-games__ribbons {
+                                        display: -webkit-flex;
+                                        display: -ms-flexbox;
+                                        display: flex;
+                                        position: absolute;
+                                        right: 0;
+                                        bottom: 2.5em;
+                                        -webkit-flex-direction: column;
+                                        -ms-flex-direction: column;
+                                        flex-direction: column;
+                                        -webkit-align-items: flex-end;
+                                        -ms-flex-align: end;
+                                        align-items: flex-end;
+                                        .live-casino-games__ribbon {
+                                            display: inline-block;
+                                            position: relative;
+                                            padding: 0em .625em;
+                                            height: 1.77778em;
+                                            margin-top: .33333em;
+                                            text-transform: uppercase;
+                                            font-size: .5625em;
+                                            font-weight: bold;
+                                            line-height: 1.77778em;
+                                            color: #000;
+                                        }
+                                        .live-casino-games__ribbon:before {
+                                            content: '';
+                                            position: absolute;
+                                            top: 0;
+                                            right: 100%;
+                                            border: .88889em solid transparent;
+                                            border-right: 0em solid transparent;
+                                        }
+                                        .live-casino-games__ribbon--green {
+                                            background: linear-gradient(to right, #789c36 -25%, #c3f097, #789c36 125%);
+                                        }
+                                        .live-casino-games__ribbon--green::before {
+                                            border-top-color: #92b958;
+                                            border-bottom-color: #92b958;
+                                        }
+                                        .live-casino-games__ribbon--blue {
+                                            background: linear-gradient(to right, #36689c -25%, #97b5f0, #36689c 125%);
+                                        }
+                                        .live-casino-games__ribbon--blue::before {
+                                            border-top-color: #5883b9;
+                                            border-bottom-color: #5883b9;
+                                        }
+                                    }
+                                    .live-casino-games__desc {
+                                        display: -webkit-flex;
+                                        display: -ms-flexbox;
+                                        display: flex;
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        box-sizing: border-box;
+                                        -webkit-justify-content: space-between;
+                                        -ms-flex-pack: justify;
+                                        justify-content: space-between;
+                                        padding: .3125em;
+                                        width: 100%;
+                                        background-color: rgba(0,0,0,0.7);
+                                        .live-casino-games__text {
+                                            -webkit-flex: 0 0 auto;
+                                            -ms-flex: 0 0 auto;
+                                            flex: 0 0 auto;
+                                            width: calc(100% - 6.5625em);
+                                            .live-casino-games__name {
+                                                overflow: hidden;
+                                                text-transform: uppercase;
+                                                text-overflow: ellipsis;
+                                                font-size: .8125em;
+                                                white-space: nowrap;
+                                            }
+                                        }
+                                        .live-casino-games__info {
+                                            -webkit-flex: 0 0 auto;
+                                            -ms-flex: 0 0 auto;
+                                            flex: 0 0 auto;
+                                            text-align: right;
+                                            .live-casino-games__players, .live-casino-games__limit {
+                                                display: -webkit-flex;
+                                                display: -ms-flexbox;
+                                                display: flex;
+                                                -webkit-align-items: center;
+                                                -ms-flex-align: center;
+                                                align-items: center;
+                                                -webkit-justify-content: flex-end;
+                                                -ms-flex-pack: end;
+                                                justify-content: flex-end;
+                                                font-size: .6875em;
+                                            }
+                                            .live-casino-games__limit-icon, .live-casino-games__players-icon {
+                                                margin-left: .38462em;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .live-casino-games__item-wrap:hover{
+                        .live-casino-games__prov {
+                            -webkit-transform: scale(1) !important;
+                            transform: scale(1) !important;
+                        }
+                    }
+                }
+                @media (max-width: 1365px)
+                {
+                    .casino-games__item-wrap, .live-casino-games__item-wrap {
+                        width: 25% !important;
+                    }
+                }
+                @media (max-width: 1023px)
+                {
+                    .casino-games__item-wrap, .live-casino-games__item-wrap {
+                        width: 33.33% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    .footerColumnMenuCon{
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        box-shadow: 0 0 3px rgba(0,0,0,0.3);
+        .footerColumnMenu {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            position: relative;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: 15px 10px 0 20px;
+            margin-bottom: 5px;
+            background: #103856;
+            font-size: 16px;
+            div{
+                .name {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    position: relative;
+                    -webkit-align-content: center;
+                    -ms-flex-line-pack: center;
+                    align-content: center;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-justify-content: flex-start;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    padding: 15px 0;
+                    height: auto;
+                    text-transform: uppercase;
+                    font-size: 1.125em;
+                    font-weight: 500;
+                    color: #fff;
+                }
+                
+                .name:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 26px;
+                    height: 3px;
+                    background: #4aa3d9;
+                }
+                .footerColumnMenuUL {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-justify-content: flex-start;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    padding: 15px 0;
+                    margin: 0;
+                    list-style: none;
+                    li {
+                        display: block;
+                        position: relative;
+                        padding: 5px 0;
+                        height: auto;
+                        line-height: 20px;
+                        white-space: nowrap;
+                        a {
+                            transition: color 0.3s ease;
+                            display: inline-block;
+                            position: relative;
+                            max-width: 100%;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            font-size: .9375em;
+                            white-space: nowrap;
+                            color: #d1dfef;
+                        }
+                        a:before {
+                            content: '';
+                            position: absolute;
+                            bottom: 2px;
+                            left: 0;
+                            width: 0;
+                            height: 1px;
+                            background: #d1dfef;
+                        }
+                        a:hover {
+                            z-index: 1;
+                            max-width: 100%;
+                            background: none;
+                            color: #fff;
+                        }
+                        a:hover::before {
+                            transition: 0.3s ease;
+                            width: 100%;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .foot-description-bg {
+        box-shadow: none;
+        background: #0c304b;
+        font-size: 16px;
+        line-height: 115%;
+        color: #659bc3;
+        .foot-description {
+            margin-bottom: 5px;
+            overflow: hidden;
+            background: #103856;
+            color: #fff;
+            .foot-description-partner {
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin: .625em 1.25em 1.25em;
+                font-size: 16px;
+                .foot-description-partner__sport, .foot-description-partner__esport {
+                    margin-right: 2.5em;
+                    margin-top: 1.875em;
+                    .foot-description ul, .foot-description p {
+                        font-size: .875em;
+                        line-height: 1.43;
+                    }
+                    .foot-description-partner__title {
+                        margin: 0 0 1.07143em;
+                        font-size: .875em;
+                        color: #fff;
+                    }
+                    .foot-description-partner__wrap {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex-wrap: wrap;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        font-size: .9375em;
+                    }
+                    .foot-description-partner__item {
+                        background-size: auto 100%;
+                        display: block;
+                        -webkit-flex-basis: 5.3125em;
+                        -ms-flex-preferred-size: 5.3125em;
+                        flex-basis: 5.3125em;
+                        min-width: 5.3125em;
+                        height: 5.9375em;
+                        margin-right: .9375em;
+                        margin-bottom: .625em;
+                        background-position: 50%;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                    }
+                }
+                .foot-description-partner__esport {
+                    margin-top: 1.875em;
+                }
+            }
+        }
+    }
+    .f-policy {
+        box-sizing: border-box;
+        padding: 1.25em .83333em;
+        margin-bottom: .41667em;
+        background-color: #113755;
+        font-size: 12px;
+        line-height: 1.5;
+        color: rgba(255,255,255,0.7);
+    }
+    .footer-position {
+        font-size: 1.33333em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        box-shadow: 0em 0.1875em 0.1875em rgba(0,0,0,0.3);
+        background: #103856;
+        color: #d1dfef;
+        padding: 1.875em 1.25em;
+        grid-gap: .625em;
+        padding-bottom: 3.75em;
+        .foot_column {  
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            box-sizing: border-box;
+            -webkit-flex-basis: auto;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            -webkit-flex-shrink: 1;
+            -ms-flex-negative: 1;
+            flex-shrink: 1;
+            -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            min-height: 5.375em;
+            font-size: inherit;
+            background: transparent;
+            .footer-support-phone {
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                background: rgba(0,0,0,0.15);
+                border-radius: .1875em;
+                margin: 0em 1.25em .625em 0em;
+                padding: .9375em;
+                min-width: 16.25em;
+                .footer-support-phone__container {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-justify-content: flex-start;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    padding: 0em .4375em;
+                    width: 100%;
+                    .footer-support-phone__ico {
+                        -webkit-flex: none;
+                        -ms-flex: none;
+                        flex: none;
+                        max-width: 100%;
+                        max-height: 100%;
+                        width: 1.75em;
+                        height: 1.75em;
+                        fill: none;
+                    }
+                    .footer-support-phone__content:before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        -webkit-transform: translate(-.625em, -50%);
+                        transform: translate(-.625em, -50%);
+                        height: 100%;
+                        width: 1px;
+                        background: rgba(255,255,255,0.2);
+                    }
+                    .footer-support-phone__content {
+                        -webkit-flex: none;
+                        -ms-flex: none;
+                        flex: none;
+                        white-space: nowrap;
+                        position: relative;
+                        margin: 0em 1.25em;
+                        .footer-support-phone__label {
+                            text-transform: uppercase;
+                            color: rgba(255,255,255,0.6);
+                            font-size: .875em;
+                            display: block;
+                        }
+                        .footer-support-phone__link {
+                            font-size: 1.375em;
+                            color: #fff;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.first-page{
+    margin: 0;
+    padding: 0 10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #0a2940;
+    .first-page-header{
+        padding-top: 10px;
+        margin:0 0 10px 0;
+        .slider{
+            padding: 0px;
+            margin: 0;
+            margin-left: 10px;
+        }
+        .nav-box {
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            z-index: 0;
+            border: none;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: 199.75px;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid #1f72af;
+            background-clip: content-box;
+        }
+        .nav-box:hover 
+        {
+            .nav-box__footer {
+                -webkit-animation: fadeIn 0.3s ease-in-out 0.3s forwards;
+                animation: fadeIn 0.3s ease-in-out 0.3s forwards;
+            }
+            .nav-box__header, .nav-box__content {
+                -webkit-animation: fadeOut 0.3s ease-in-out forwards;
+                animation: fadeOut 0.3s ease-in-out forwards;
+            }
+            .nav-box__bg{
+                transform: scale(1.1);
+            }
+        }
+        .nav-box_default::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #0a2940 0%, rgba(0,0,0,0) 100%),linear-gradient(to bottom, #0a2940 0%, rgba(0,0,0,0) 30%);
+        }
+        .nav-box_default::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background: rgba(10,41,64,0.3);
+            transition: background 0.3s linear;
+        }
+        .nav-box__bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            transition: -webkit-transform 0.3s linear;
+            transition: transform 0.3s linear;
+            transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+        }
+        .nav-box__header{
+            z-index: 2;
+            -webkit-flex: 1 0 auto;
+            -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+            .nav-box__title {
+                font-size: 17px;
+                padding-left: 17px;
+                margin-top: 17px;
+                position: relative;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                font-weight: 500;
+                color: #fff;
+            }
+            .nav-box__title::before {
+                width: 42.5px;
+                height: 1.7px;
+                bottom: -17px;
+                left: 17px;
+                content: '';
+                position: absolute;
+                background: #fff;
+            }
+        }
+        .nav-box__content {
+            padding-left: 17px;
+            padding-bottom: 17px;
+            z-index: 2;
+            margin: 0;
+            .nav-box__text {
+                font-size: 12px;
+                font-weight: 500;
+                color: #4ca3d9;
+                span{
+                    font-size: 36px;
+                    font-weight: 700;
+                    color: #4ca3d9;
+                }
+            }
+        }
+        .nav-box__footer {
+            z-index: 2;
+            opacity: 0;
+            position: absolute;
+            top: 60%;
+            width: 100%;
+            -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+            .nav-box__button{
+                font-size: 17px;
+                height: 34px;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                width: 100%;
+                text-transform: uppercase;
+                color: #fff;
+                font-weight: 500;
+            }
+            .nav-box__button::before {
+                width: 42.5px;
+                height: 1.7px;
+                bottom: -8.5px;
+                content: '';
+                position: absolute;
+                left: 50%;
+                background: #4ca3d9;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
+        @media (min-width: 1200px){
+            .nav-box {
+                height: 12.23958vw;
+            }
+            .nav-box__title {
+                margin-top: 1.04167vw;
+                padding-left: 1.04167vw;
+                font-size: 1.04167vw;
+            }
+            .nav-box__title::before {
+                bottom: -1.04167vw;
+                height: .10417vw;
+                width: 2.60417vw;
+            }
+            .nav-box__content {
+                padding-bottom: 1.04167vw;
+                padding-left: 1.04167vw;
+            }
+            .nav-box__button {
+                height: 2.08333vw;
+                font-size: 1.04167vw;
+            }
+            .nav-box__button::before {
+                bottom: -.52083vw;
+                height: .10417vw;
+                width: 2.60417vw;
+            }
+        }
+        .registration-betting{
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            max-height: 25vw;
+            height: 100%;
+        }
+        .registration-betting__link {
+            cursor: pointer;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 2.5em;
+            text-align: center;
+            box-shadow: inset 0 -0.28571em #526e1f;
+            background-color: #79a430;
+            text-transform: uppercase;
+            font-size: 1.1em;
+            font-weight: 500;
+            letter-spacing: 0.25px;
+            color: #fff !important;
+            transition: box-shadow 0.2s linear;
+        }
+        .registration-betting__link:hover {
+            box-shadow: inset 0 -3.57143em #526e1f;
+        }
+        .main_registration_section{
+            max-height: 25vw;
+            height: 100%;
+        }
+        .js_reg_form_scroll {
+            position: relative;
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            height: calc(25vw - 2em);
+            max-height: 25vw;
+            overflow: auto;
+            background: #fff;
+            font-size: 1.33333em;
+            .c-registration {
+                transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); 
+                transition-duration: 0ms; 
+                transform: translate(0px, 0px) translateZ(0px);
+                padding: .9375em 1.5625em .625em;
+                border-radius: 0;
+                font-size: 16px;
+                position: relative;
+                box-sizing: border-box;
+                width: 100%;
+                border-radius: .1875em;
+                background-color: #fff;
+                font-size: 16px;
+                .c-registration__title {
+                    margin: 0em 0em .55556em;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #23507d;
+                    margin-bottom: .75em;
+                    font-size: 1.25em;
+                    line-height: 1.1;
+                }
+                .c-registration__item{
+                    .nav-tabs{
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        height: 2.125em;
+                        margin-bottom: 1.25em;
+                        overflow: hidden;
+                        width: 100%;
+                        font-size: 16px;
+                        .nav-item{
+                            .nav-link{
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                cursor: pointer;
+                                -webkit-flex: 1 0 auto;
+                                -ms-flex: 1 0 auto;
+                                flex: 1 0 auto;
+                                -webkit-align-items: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                -webkit-justify-content: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                background-color: #d7e5f1;
+                                color: #377bbb;
+                                -webkit-flex: 1 0 auto;
+                                -ms-flex: 1 0 auto;
+                                flex: 1 0 auto;
+                                width: 100%;
+                                font-size: .875em;
+                                line-height: 1.2;
+                                .c-registration__tab-ico{
+                                    fill: #377bbb;
+                                    margin-right: 0;
+                                    -webkit-flex-shrink: 0;
+                                    -ms-flex-negative: 0;
+                                    flex-shrink: 0;
+                                    max-width: 1.375em;
+                                    max-height: 1.375em;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .nav-link.active {
+                                transition: background-color 0.3s ease !important;
+                                background-color: #377bbb !important;
+                                transform: translateY(0px) !important;
+                                color: #fff !important;
+                                .c-registration__tab-ico{
+                                    fill: #fff;
+                                }
+                            }
+                            .nav-link:not(:last-of-type) {
+                                margin-right: 1px !important;
+                            }
+                        }
+                    }   
+                    .tab-content{
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        padding: 0em;
+                        border: none;
+                        .tab-pane{
+                            background-color: transparent;
+                        }
+                    }
+                    .c-registration__field{
+                        text-align: center;
+                        font-size: .6875em;
+                        line-height: 1.35;
+                        color: #23507d;
+                        -webkit-flex: 1 0 auto;
+                        -ms-flex: 1 0 auto;
+                        flex: 1 0 auto;
+                        a{
+                            text-decoration: underline;
+                            color: #377bbb;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .button {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            cursor: pointer;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            min-height: 3em;
+            box-shadow: inset 0 -0.28571em #547120;
+            background-color: #7ca731;
+            text-transform: uppercase;
+            font-size: .875em;
+            font-weight: 500;
+            letter-spacing: 0.25px;
+            color: #fff;
+            transition: box-shadow 0.2s linear !important;
+        }
+        .button:hover {
+            box-shadow: inset 0 -3.57143em #526e1f;
+        }
+        .c-registration__input {
+            position: relative;
+            padding: 0em .9375em;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            border: none;
+            background: transparent;
+            font-size: 1em !important;
+            font-weight: 500 !important;
+            line-height: 1.2 !important;
+            color: #23507d !important;
+            font-family: Roboto, sans-serif;
+            -webkit-filter: none;
+            filter: none;
+            font-size: .875em;
+            height: 42px;
+            border: 1px solid #d6dbdd;
+            text-align: left !important;
+        }
+        .swiper-container{
+            height: 100%;
+            border: #2072af 1px solid;
+            .swiper-pagination-bullet-active {
+                background: #7daa2f !important;
+            }
+            .swiper-pagination-bullet{
+                background: #fff;
+                opacity: 1;
+                width: 40px;
+                height: 3px;
+                border: none;
+                border-radius: 0px;
+            }
+            .swiper-pagination{
+                display: flex;
+                padding-left: 30px;
+            }
+            .swiper-wrapper{
+                height: 100%;
+                .swiper-slide{
+                    height: 100%;
+                    img{
+                        height:100%;
+                    }
+                }
+            }
+    
+            .slider__link_onclick {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                padding: 25px;
+                width: 100%;
+                height: 100%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                .slide__title {
+                    margin-top: 13.6px;
+                    margin-bottom: 20.4px;
+                    font-size: 27.2px;
+                    max-width: 55%;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #fff;
+                }
+                .slide__subtitle {
+                    font-size: 13.6px;
+                    max-width: 50%;
+                    color: #fff;
+                }
+                .slide__btn-group {
+                    display: -webkit-inline-flex;
+                    display: -ms-inline-flexbox;
+                    display: inline-flex;
+                    -webkit-justify-content: space-between;
+                    -ms-flex-pack: justify;
+                    justify-content: space-between;
+                    .slide__btn-group, *{
+                        padding-right: 2em;
+                        padding-left: 2em;
+                    }
+                    .slide__button {
+                        max-width: 206.55px;
+                        margin-top: 27.2px;
+                        -webkit-flex: 0 0 auto;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                    }
+                    .main-header__btn {
+                        font-size: 12.75px;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        font-weight: 500;
+                        text-align: center;
+                        background: #7daa2f;
+                        height: 37.4px;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        position: relative;
+                        cursor: pointer;
+                        z-index: 1;
+                        overflow: hidden;
+                    }
+                    .main-header__btn:hover {
+                        box-shadow: inset 0 -3.57143em #526e1f;
+                    }
+                    .main-header__btn:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        height: 150%;
+                        width: 100%;
+                        top: calc(100% - 4px);
+                        background: #557321;
+                        -webkit-transform: translateZ(0);
+                        transform: translateZ(0);
+                        transition: -webkit-transform .2s ease-in-out;
+                        transition: transform .2s ease-in-out;
+                        transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+                        z-index: -1;
+                    }
+                    .main-header__btn:hover:before {
+                        -webkit-transform: translateY(-90%);
+                        transform: translateY(-90%);
+                    }
+                }
+            }
+        }
+    }
+    .first-page-content{
+        padding-right: 260px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        .sports_main_new{
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            width: 0;
+            .c-section {
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                border: 1px solid #103654;
+                .c-section__header {
+                    position: relative;
+                    .c-section-header {
+                        font-size: 16px;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        padding: 7px 10px;
+                        background: #4988b9;
+                        border-bottom: 1px solid #0a2940;
+                        .c-section-header__title {
+                            margin: 0 auto 0 0;
+                            color: #fff;
+                            font-size: .875em;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            span {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .b-filters__options {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex: 1 1 auto;
+                        -ms-flex: 1 1 auto;
+                        flex: 1 1 auto;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        padding: 0 8px;
+                        background-color: #4d8ab9;
+                        line-height: 0;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-flex: 0 0 auto;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        padding: 0;
+                        .sports-content__search-wrap{
+                            position: relative;
+                            width: 200px;
+                            .sports-content__search-icon{
+                                display: inline-block;
+                                position: absolute;
+                                top: 50%;
+                                left: 1em;
+                                font-family: FontAwesome;
+                                color:#1f72af;
+                                -webkit-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                            }
+                            .sports-content__search{
+                                box-sizing: border-box;
+                                padding: .3125em .625em .3125em 2.1875em;
+                                width: 100%;
+                                outline: 0;
+                                border: none;
+                                background-color: #eaf0f6;
+                                font-size: 15px;
+                                color: #1f72af;
+                            }
+                        }
+                    }
+                }
+                .c-section__content{
+                    .c-events {
+                        background: #fff;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        font-size: 16px;
+                        .c-events__item_head {
+                            background: #d2dee2;
+                            padding-left: 10px;
+                            overflow: visible;
+                        }
+                        .c-events__item {
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            position: relative;
+                            -webkit-flex: 1 0 auto;
+                            -ms-flex: 1 0 auto;
+                            flex: 1 0 auto;
+                            -webkit-flex-wrap: wrap;
+                            -ms-flex-wrap: wrap;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            overflow: hidden;
+                            border-top: 1px solid #d2dee2;
+                        }
+
+                        .icon {
+                            fill: #2c69a7;
+                            width: 18px;
+                            height: 18px;
+                            -webkit-align-self: center;
+                            -ms-flex-item-align: center;
+                            align-self: center;
+                        }
+                        .langDT17 {
+                            display: inline-block;
+                            width: 21px !important;
+                            height: 21px !important;
+                            background: url(../img/flags-sprite.png) no-repeat 107.1446% 88.9362%;
+                            background-size: 2438.1%;
+                            vertical-align: top;
+                            -webkit-flex-shrink: 0;
+                            -ms-flex-negative: 0;
+                            flex-shrink: 0;
+                        }
+                        .c-events__lang {
+                            background-position: 75.3564% 5.09165%;
+                            width: 17px;
+                            height: 17px;
+                            margin: 0 15px;
+                            -webkit-align-self: center;
+                            -ms-flex-item-align: center;
+                            align-self: center;
+                        }
+                        .c-events__name {
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-flex: 1 1 0;
+                            -ms-flex: 1 1 0px;
+                            flex: 1 1 0;
+                            -webkit-align-items: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            padding: 5px 0 5px 9px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            font-size: 0.875em;
+                            white-space: nowrap;
+                            color: #444;
+                        }
+                        .c-events__name:after {
+                            content: '+';
+                            display: block;
+                            -webkit-flex: 0 0 35px;
+                            -ms-flex: 0 0 35px;
+                            flex: 0 0 35px;
+                            width: 35px;
+                            margin-left: auto;
+                            text-align: center;
+                            font-size: 0.875em;
+                        }
+                        .c-bets {
+                            -webkit-flex: 0 0 53%;
+                            -ms-flex: 0 0 53%;
+                            flex: 0 0 53%;
+                            width: 53%;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-align-items: stretch;
+                            -ms-flex-align: stretch;
+                            align-items: stretch;
+                        }
+                        .c-bets__bet {
+                            overflow: initial;
+                            background: none !important;
+                            word-break: break-word;
+                            color: #fff;
+                        }
+                        .c-bets__bet {
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            position: relative;
+                            z-index: initial;
+                            cursor: pointer;
+                            -webkit-flex-basis: 16.6666%;
+                            -ms-flex-preferred-size: 16.6666%;
+                            flex-basis: 16.6666%;
+                            -webkit-flex-grow: 1;
+                            -ms-flex-positive: 1;
+                            flex-grow: 1;
+                            -webkit-flex-shrink: 1;
+                            -ms-flex-negative: 1;
+                            flex-shrink: 1;
+                            -webkit-align-items: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-justify-content: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            min-width: 35px;
+                            min-height: 30px;
+                            margin-right: 1px;
+                            overflow: hidden;
+                            background: #eee;
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-size: 0.6875em;
+                            color: #444;
+                        }
+                        .c-events__item_col{
+                            -webkit-flex-direction: column;
+                            -ms-flex-direction: column;
+                            flex-direction: column;
+                        }
+                        .c-events__date {
+                            padding: .55em 0em .45em;
+                            text-transform: uppercase;
+                            font-size: .625em;
+                            line-height: 1;
+                            color: #286da6;
+                            margin-left: 24px;
+                        }
+                    }
+                    .c-events__favorite {
+                        position: absolute;
+                        top: 50%;
+                        left: 11px;
+                        z-index: 1;
+                        margin-top: -10px;
+                        font-size: 0.875em;
+                        color: #444;
+                        -webkit-transform: translateX(-30px);
+                        transform: translateX(-30px);
+                        transition: -webkit-transform 0.35s ease;
+                        transition: transform 0.35s ease;
+                        transition: transform 0.35s ease, -webkit-transform 0.35s ease;
+                    }
+                    .c-events__favorite:before {
+                        content: '\f006';
+                        text-rendering: auto;
+                        font: normal normal normal 0.875em/1 FontAwesome;
+                        font-size: inherit;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                    }
+                    .c-events__time-info {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        margin-left: 24px;
+                    }
+                    .c-events__time {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex: 0 0 50px;
+                        -ms-flex: 0 0 50px;
+                        flex: 0 0 50px;
+                        -webkit-flex-wrap: wrap;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-align-self: center;
+                        -ms-flex-item-align: center;
+                        align-self: center;
+                        width: 50px;
+                        font-size: 0.75em;
+                        color: #397baf;
+                        span{
+                            color: #397baf;
+                        }
+                    }
+                    .c-events__to-top {
+                        position: relative;
+                        top: -5px;
+                        cursor: pointer;
+                        -webkit-align-self: center;
+                        -ms-flex-item-align: center;
+                        align-self: center;
+                        padding: 0;
+                        margin-left: 9px;
+                        outline: none;
+                        border: none;
+                        background: transparent;
+                        font-size: 9px;
+                        letter-spacing: -0.2px;
+                        color: #b3bcbf;
+                        transition: color 0.3s linear;
+                    }
+                    .c-events__to-top_line {
+                        padding-top: 8px;
+                    }
+                    .top-icon {
+                        width: 15px;
+                        height: 15px;
+                        fill: #a0c3e5;
+                    }
+                    .c-events__name {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex: 1 1 0;
+                        -ms-flex: 1 1 0px;
+                        flex: 1 1 0;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        padding: 5px 0 5px 9px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 0.875em;
+                        white-space: nowrap;
+                        color: #444;
+                    }
+                    .c-events__teams {
+                        position: relative;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        span{
+                            color: #397baf;
+                        }
+                    }
+                    .c-events__teams:before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background: #397baf;
+                        -webkit-transform: scale3d(0, 1, 0);
+                        transform: scale3d(0, 1, 0);
+                        -webkit-transform-origin: 0 0;
+                        transform-origin: 0 0;
+                        transition: -webkit-transform 0.3s ease;
+                        transition: transform 0.3s ease;
+                        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+                    }
+                    .c-events__team+.c-events__team:before {
+                        content: ' - ';
+                    }
+                    .c-events__dop {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        margin: 0 5px;
+                    }
+                    .c-events__icons {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                    }
+                    .c-events__ico:first-child {
+                        margin-left: 0;
+                    }
+                    .c-events__ico_standings {
+                        height: 17px;
+                        color: #6b6b6b;
+                    }
+                    .c-events__ico_coef-graph {
+                        width: 14px;
+                        height: 13px;
+                    }
+                    .c-events__ico {
+                        cursor: pointer;
+                        margin: 2.5px 0 1.5px 3px;
+                    }
+                    .c-events__ico_self_stat {
+                        width: 16px;
+                        height: 13px;
+                    }
+                    .c-events__more-wrap {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex-basis: 65px;
+                        -ms-flex-preferred-size: 65px;
+                        flex-basis: 65px;
+                        -webkit-justify-content: flex-end;
+                        -ms-flex-pack: end;
+                        justify-content: flex-end;
+                    }
+                    .c-events__more {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        min-width: 30px;
+                        min-height: 30px;
+                        transition: color 0.3s ease, background 0.3s ease;
+                    }
+                    .c-events__more_events {
+                        color: #397baf;
+                    }
+                    .c-events__more_events:before {
+                        content: '\f107';
+                        width: 100%;
+                        height: 100%;
+                        -webkit-transform-origin: 50% 53%;
+                        transform-origin: 50% 53%;
+                        transition: -webkit-transform 0.3s ease;
+                        transition: transform 0.3s ease;
+                        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+                    }
+                    .c-events__more:before {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        text-rendering: auto;
+                        font: normal normal normal 0.875em/1 FontAwesome;
+                        font-size: 1em;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                    }
+                    .c-events__more_bets {
+                        -webkit-flex: 0 0 35px;
+                        -ms-flex: 0 0 35px;
+                        flex: 0 0 35px;
+                        width: 35px;
+                        text-decoration: underline;
+                        font-size: 0.6875em;
+                        color: #444;
+                    }
+                    .grayBack .c-bets__bet {
+                        color: #444;
+                    }
+                    .l-main * {
+                        box-sizing: border-box;
+                    }
+                    .c-events * {
+                        box-sizing: border-box;
+                    }
+                    .c-bets__bet {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        position: relative;
+                        z-index: initial;
+                        cursor: pointer;
+                        -webkit-flex-basis: 16.6666%;
+                        -ms-flex-preferred-size: 16.6666%;
+                        flex-basis: 16.6666%;
+                        -webkit-flex-grow: 1;
+                        -ms-flex-positive: 1;
+                        flex-grow: 1;
+                        -webkit-flex-shrink: 1;
+                        -ms-flex-negative: 1;
+                        flex-shrink: 1;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        min-width: 35px;
+                        min-height: 30px;
+                        margin-right: 1px;
+                        overflow: hidden;
+                        background: #eee;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-size: 0.6875em;
+                        color: #444;
+                    }
+                }
+                .sports-slider__wrapper {
+                    background-color: #1b5785;
+                    .b-filters__sports {
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-flex: 1 1 auto;
+                        -ms-flex: 1 1 auto;
+                        flex: 1 1 auto;
+                        width: 100%;
+                        min-width: 1px;
+                        margin-bottom: 0;
+                        background-color: #1b5785;
+                        .icon {
+                            display: block;
+                            -webkit-flex: 0 0 auto;
+                            -ms-flex: 0 0 auto;
+                            flex: 0 0 auto;
+                            width: 15px;
+                            height: 15px;
+                            margin: 0;
+                            background-repeat: no-repeat;
+                            image-rendering: -webkit-optimize-contrast;
+                            fill: #fff;
+                        }
+                        .b-filters__item_alone {
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-justify-content: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-align-items: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            padding: 0 15px;
+                            border-right: 1px solid #183451;
+                            .c-events__ico:first-child {
+                                margin-left: 0;
+                            }
+                            .c-events__ico_video {
+                                cursor: pointer;
+                                width: 21px;
+                                height: 13px;
+                                background:url(../img/pages/Icon_live.svg) no-repeat;
+                                margin: 2.5px 0 1.5px 3px;
+                            }
+                        }
+                        .b-filters__item {
+                            box-shadow: inset 0 -2px transparent;
+                            opacity: .65;
+                            transition: opacity .2s ease;
+                        }
+                        .b-filters__carousel{
+                            -webkit-flex: 1 1 auto;
+                            -ms-flex: 1 1 auto;
+                            flex: 1 1 auto;
+                            width: 100%;
+                            min-width: 0;
+                            background: #1a5685;
+                            .swiper-wrapper {
+                                position: relative;
+                                width: calc(100% - 60px);
+                                height: 100%;
+                                z-index: 1;
+                                display: flex;
+                                box-sizing: content-box;
+                                margin: 0 30px !important;
+                            }
+                            .swiper-button-prev{
+                                background-color: #1b5785;
+                                top: 0;
+                                margin: 0;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-justify-content: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                -webkit-align-items: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                -webkit-filter: none;
+                                filter: none;
+                                z-index: 50;
+                                width: 27px;
+                                height: 100%;
+                                cursor: pointer;
+                                text-align: center;
+                                line-height: 67px;
+                                color: #fff;
+                                transition: background-color 0.3s;
+                                will-change: background-color;
+                                position: absolute;
+                                outline: none;
+                                opacity: 1;
+                                left: 0;
+                            }
+                            .swiper-button-next{
+                                background-color: #1b5785;
+                                top: 0;
+                                margin: 0;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-justify-content: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                -webkit-align-items: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                -webkit-filter: none;
+                                filter: none;
+                                z-index: 50;
+                                width: 27px;
+                                height: 100%;
+                                cursor: pointer;
+                                text-align: center;
+                                line-height: 67px;
+                                color: #fff;
+                                transition: background-color 0.3s;
+                                will-change: background-color;
+                                position: absolute;
+                                outline: none;
+                                opacity: 1;
+                                right: 0;
+                            }
+                            .swiper-button-disabled:after{
+                                opacity: 0.5 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .l-main-inner__aside_coupon {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            width: 250px;
+            overflow: auto;
+            #sports_right {
+                position: relative;
+                top: 0;
+                height: 100%;
+                right: 0;
+                padding: 0;
+                margin: 0 !important;
+                -webkit-transform: none !important;
+                transform: none !important;
+                width: 250px;
+                bottom: 10px;
+                z-index: 10005;
+                float: right;
+                .iscroll-wrap {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: inherit;
+                    width: inherit;
+                    transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+                    transition-duration: 0ms;
+                    left: 0px;
+                    top: 0px;
+                    padding-bottom: 120px;
+                    .w-social {
+                        margin: 5px 0;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex-wrap: wrap;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        .w-social__item {
+                            -webkit-flex: 1 1 auto;
+                            -ms-flex: 1 1 auto;
+                            flex: 1 1 auto;
+                            width: calc(25% - 10px);
+                            margin: 5px 10px;
+                            .w-social__link {
+                                font-size: 12px;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                padding: .75em;
+                                background: #17324b;
+                                color: #fff;
+                                transition: background .25s ease;
+                                .w-social__icon {
+                                    margin: auto;
+                                    font-size: 2em;
+                                }
+                            }
+                        }
+                    }
+                    .w-social__item:first-child, .w-social__item+.w-social__item {
+                        margin-left: 0;
+                    }
+                    .w-social__item:last-child, .w-social__item:nth-child(4n) {
+                        margin-right: 0;
+                    }
+                    #sports_right .banCont {
+                        margin-bottom: 5px;
+                    }
+                    body.betting-main .banCont.latent {
+                        margin-top: 10px;
+                    }
+                    .banCont {
+                        position: relative;
+                        width: 250px;
+                    }
+                    .fz {
+                        margin-bottom: 10px;
+                        background: #1f72af;
+                        border-radius: 0 !important;
+                        padding: 0 10px;
+                        height: 34px;
+                        border-radius: 3px 3px 0 0;
+                        -pie-background: linear-gradient(to top, #3684bd, #0e63a6);
+                        background: #3684bd;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 34px;
+                        color: #fff;
+                    }
+                    .right-banners-block {
+                        -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        margin-top: 5px;
+                    }
+                    .br-banner {
+                        box-sizing: border-box;
+                        padding: 13px;
+                        width: 100%;
+                        margin-bottom: 15px;
+                        background: url(../img/br-banner-bg-decoration.png) top no-repeat #113756;
+                        background-size: cover;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        color: #fff;
+                    }
+                    .br-banner__title {
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
+                    .br-banner-body {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-justify-content: space-between;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        margin-bottom: 13px;
+                        background-image: url(../img/bgvs.png);
+                        background-position: top 14px center;
+                        background-repeat: no-repeat;
+                        background-size: 90px;
+                        .br-banner-team {
+                            width: 70px;
+                            font-size: 9px;
+                            letter-spacing: 0.33px;
+                            .br-banner-team__image {
+                                margin-bottom: 11px;
+                                img {
+                                    max-width: 100%;
+                                }
+                            }
+                            .br-banner-team__title {
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                text-align: center;
+                            }
+                        }
+                        .br-banner-info {
+                            -webkit-align-self: flex-end;
+                            -ms-flex-item-align: end;
+                            align-self: flex-end;
+                            -webkit-transform: translateY(5px);
+                            transform: translateY(5px);
+                            .br-banner-info__time {
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                position: relative;
+                                -webkit-flex-direction: column;
+                                -ms-flex-direction: column;
+                                flex-direction: column;
+                                -webkit-align-items: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                -webkit-justify-content: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                width: 43px;
+                                height: 43px;
+                                margin-bottom: 7px;
+                                border: 1px solid #647786;
+                                border-radius: 50%;
+                                background-color: #113756;
+                                font-size: 10px;
+                            }
+                            .br-banner-info__time:before {
+                                right: 100%;
+                            }
+                            .br-banner-info__time:after {
+                                left: 100%;
+                            }
+                            .br-banner-info__time:after, .br-banner-info__time:before {
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                width: 24px;
+                                height: 1px;
+                                background-color: #95cc37;
+                                -webkit-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                    .br-banner-footer {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-justify-content: space-between;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        padding: 0 8px;
+                        background-color: #23507c;
+                        font-size: 12px;
+                    }
+                    .br-banner-footer__val--left {
+                        padding-right: 10px;
+                        text-align: center;
+                    }
+                    .br-banner a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                    .br-banner-footer__btn {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        position: relative;
+                        z-index: 0;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        min-height: 32px;
+                        margin-top: -1px;
+                        margin-bottom: -1px;
+                        padding-left: 13px;
+                        padding-right: 13px;
+                        box-shadow: 0 0 25px rgba(0,0,0,0.25);
+                        background-color: #6c952b;
+                        font-size: 10px;
+                        transition: all 0.5s;
+                    }
+                    .br-banner-footer__val--right {
+                        padding-left: 10px;
+                        text-align: center;
+                    }
+                    .br-banner-footer__val {
+                        -webkit-flex-grow: 1;
+                        -ms-flex-positive: 1;
+                        flex-grow: 1;
+                        -webkit-flex-shrink: 1;
+                        -ms-flex-negative: 1;
+                        flex-shrink: 1;
+                    }
+                    .br-banner-footer__btn:before {
+                        -webkit-transform: skew(24deg);
+                        transform: skew(24deg);
+                    }
+                    .br-banner-footer__btn:after, .br-banner-footer__btn:before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: -1;
+                        background-color: #6c952b;
+                        transition: all 0.5s;
+                        -webkit-transform-origin: bottom;
+                        transform-origin: bottom;
+                    }
+                    .br-banner-footer__btn:after {
+                        -webkit-transform: skew(-24deg);
+                        transform: skew(-24deg);
+                    }
+                    .br-banner-info__ico{
+                        .icon {
+                            fill: #fff;
+                            display: block;
+                            width: 24px;
+                            height: 24px;
+                            margin: 8px auto 0;
+                        }
+                    }
+                }
+            }
+        }
+        .l-main-inner__aside {
+            -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+        }
+    }
+}
+
+[dir=ltr] .first-page .first-page-content .sports_main_new .c-section .sports-slider__wrapper .b-filters__sports .b-filters__carousel .swiper-button-prev {
+    background: #1b5785 !important;
+    left: 0 !important;
+}
+[dir=ltr] .first-page .first-page-content .sports_main_new .c-section .sports-slider__wrapper .b-filters__sports .b-filters__carousel .swiper-button-next {
+    background: #1b5785 !important;
+    right: 0;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 0.8rem !important;
+}
+
+.sports_page{
+    position: relative;
+    padding: 0 10px 10px;
+    width: auto;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #333;
+    .sports_left{
+        z-index: 10030;
+        top: 90px !important;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        bottom: 10px;
+        float: left;
+        padding: 0;
+        width: 250px;
+        min-height: auto;
+        margin: 10px 0 0;
+        overflow: visible;
+        .left_menuEventCon {
+            position: relative;
+            float: right;
+            width: 250px;
+            height: 100%;
+            font-size: 16px;
+            .left_menuEventCon_slide:not(:hover) {
+                transition: 0.2s;
+            }
+            .left_menuEventCon_slide {
+                .inner-content {
+                    overflow-y: auto;
+                    .ls-panel {
+                        box-sizing: border-box;
+                        margin-bottom: 1px;
+                    }
+                    .assideCon {
+                        width: 250px;
+                        margin-bottom: 1px;
+                        .assideCon_head {
+                            position: relative;
+                            height: auto;
+                            border-radius: 3px;
+                            background-color: #2073b0;
+                            line-height: 26px;
+                            .name {
+                                box-sizing: border-box;
+                                padding: 4px 10px;
+                                font-size: 0.875em;
+                                color: #fff;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-justify-content: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                -webkit-align-items: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                            }
+                        }
+                        .assideCon_head+.assideCon_body {
+                            display: block;
+                            margin-top: 1px;
+                            overflow: hidden;
+                            border-radius: 3px;
+                        }
+                    }
+                    .sport_menu {
+                        padding: 0;
+                        width: 250px;
+                        margin: 0 1px 0 0;
+                        list-style: none outside none;
+                        li {
+                            position: relative;
+                            a {
+                                margin-top: 1px;
+                                display: block;
+                                position: relative;
+                                height: 29px;
+                                overflow: hidden;
+                                border-radius: 3px;
+                                background-color: #fff;
+                                text-align: left;
+                                text-overflow: ellipsis;
+                                font-size: 0.875em !important;
+                                line-height: 29px;
+                                white-space: nowrap;
+                                color: #000;
+                                padding: 0em .71429em 0em 2.85714em !important;
+                                cursor: pointer;
+                                .icon {
+                                    width: 20px;
+                                    height: 20px;
+                                    fill: #2c69a7;
+                                    overflow: hidden;
+                                    display: block;
+                                    position: absolute;
+                                    top: calc(50% - 1.375em/ 2);
+                                    -webkit-flex: 0 0 auto;
+                                    -ms-flex: 0 0 auto;
+                                    flex: 0 0 auto;
+                                    text-align: center;
+                                    font-size: 16px;
+                                    left: .5625em;                                    
+                                }
+                                .sname{
+                                    text-align: left;
+                                    text-overflow: ellipsis;
+                                    font-size: 0.875em !important;
+                                    line-height: 29px;
+                                    white-space: nowrap;
+                                    color: #000;
+                                }
+                                .snum{
+                                    text-align: left;
+                                    text-overflow: ellipsis;
+                                    font-size: 0.875em !important;
+                                    line-height: 29px;
+                                    white-space: nowrap;
+                                    color: #000;
+                                }
+                            }
+                            a:hover {
+                                background-color: #624b6e !important;
+                                .snum,.sname{
+                                    color: #fff;
+                                }
+                                .icon{
+                                    fill: #fff;
+                                }
+                            }
+                            a:before {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                left: 0;
+                                width: 4px;
+                                background-color: #a15d38 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sports_main{
+        display: block;
+        float: none;
+        width: auto;
+        margin-left: 260px;
+        margin-right: 260px;
+        margin: 0;
+        font-size: 11px;
+        padding: 0;
+       
+        .hottest_games {
+            height: auto !important;
+            .sports_widget {
+                width: 100%;
+                position: relative;
+                ::-webkit-scrollbar {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 5px;
+                }
+                /* Track */
+                ::-webkit-scrollbar-track {
+                    opacity: 0;
+                }
+                /* Handle */
+                ::-webkit-scrollbar-thumb {
+                    opacity: 1;
+                    background:#30353b;
+                    border-radius: 5px;
+                }
+                /* Handle on hover */
+                ::-webkit-scrollbar-thumb:hover {
+                    opacity: 1;
+                    background:#30353b;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .event-tiles-wrap {
+            position: relative;
+            overflow-x: auto;
+            margin-bottom: 3px;
+            .event-tiles--row {
+                -webkit-flex-wrap: nowrap;
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            }
+            .event-tiles--small {
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+            .event-tiles {
+                margin: 0em -.45455em;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                width: max-content;
+                .event-tiles__item {
+                    padding: .45455em !important;
+                    .event-tiles .event-tile {
+                        height: 100%;
+                    }
+                    .event-tile {
+                        background: #7fc8ff;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        min-width: 360px;
+                        border: 1px solid #3272b1;
+                        background: linear-gradient(to right, rgba(12,47,75,0.67) 0%, rgba(50,114,177,0.67) 50%, rgba(12,47,75,0.67) 100%);
+                        color: #fff;
+                        .event-tile__header {
+                            -webkit-justify-content: space-between;
+                            -ms-flex-pack: justify;
+                            justify-content: space-between;
+                            padding: .54545em .72727em;
+                            background: #0c2f4b;
+                            height: 2.72727em;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            .event-tile__link {
+                                display: block;
+                                text-align: center;
+                                margin-right: auto;
+                                .event-tile__link {
+                                    text-decoration: underline;
+                                    color: inherit;
+                                    transition: opacity .3s ease;
+                                }
+                            }
+                        }
+                        .event-tile-tablo {
+                            overflow: hidden;
+                            min-height: 2.72727em;
+                            -webkit-flex-direction: row;
+                            -ms-flex-direction: row;
+                            flex-direction: row;
+                            padding: 0;
+                            position: relative;
+                        }
+                        .event-tile-tablo {
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            position: relative;
+                            z-index: 0;
+                            -webkit-flex-direction: column;
+                            -ms-flex-direction: column;
+                            flex-direction: column;
+                            -webkit-align-items: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-justify-content: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            line-height: 1.5;
+                        }
+                        .event-tile-tablo__content {
+                            padding: .54545em .72727em;
+                            justify-content: space-between;
+                            -webkit-display:flex;
+                            -ms-display:flex;
+                            display:flex;
+                            width:100%;
+                        }
+                        .event-tile-tablo__content {
+                            transition: opacity .25s ease, -webkit-transform .25s ease;
+                            transition: opacity .25s ease, transform .25s ease;
+                            transition: opacity .25s ease, transform .25s ease, -webkit-transform .25s ease;
+                        }
+                        .event-tile-tablo__footer {
+                            opacity: 0;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            padding: .54545em .72727em;
+                            -webkit-transform: scale(1.1);
+                            transform: scale(1.1);
+                            -webkit-transform-origin: 50% 50%;
+                            transform-origin: 50% 50%;
+                            transition: opacity .2s .12s ease, -webkit-transform .2s .12s ease;
+                            transition: transform .2s .12s ease, opacity .2s .12s ease;
+                            transition: transform .2s .12s ease, opacity .2s .12s ease, -webkit-transform .2s .12s ease;
+                        }
+                        .event-tile__link {
+                            display: block;
+                            text-align: center;
+                            margin-right: auto;
+                        }
+                        .event-tile__link--anim-appear {
+                            opacity: 0;
+                        }
+                        .event-tile__link--accent {
+                            text-transform: uppercase;
+                            color: #a9e540;
+                        }
+                        .event-tile__link {
+                            text-decoration: underline;
+                            color: inherit;
+                            transition: opacity .3s ease;
+                        }
+                        .event-tile__content {
+                            -webkit-flex: 1 1 auto;
+                            -ms-flex: 1 1 auto;
+                            flex: 1 1 auto;
+                            min-height: 2.72727em;
+                        }
+                        .event-tile__content {
+                            min-height: 4em;
+                        }
+                        .event-tile__content, .event-tile__header {
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                        }
+                        .event-tile__team {
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-flex: 0 1 50%;
+                            -ms-flex: 0 1 50%;
+                            flex: 0 1 50%;
+                            -webkit-align-items: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            padding: .72727em;
+                            border-width: 1px 0;
+                            border-style: solid;
+                            border-color: #3272b1;
+                            background: #224366;
+                        }
+                        .event-tile__team-left {
+                            border-left-width: 1px !important;
+                        }
+                        .event-tile__img {
+                            -webkit-flex: 0 0 auto;
+                            -ms-flex: 0 0 auto;
+                            flex: 0 0 auto;
+                            width: 32px;
+                            height: 32px;
+                        }
+                        img {
+                            border: none;
+                        }
+                        .event-tile__name {
+                            -webkit-flex: 1 1 auto;
+                            -ms-flex: 1 1 auto;
+                            flex: 1 1 auto;
+                            padding: 0 .625em;
+                            text-align: center;
+                            font-size: 1em;
+                        }
+                        .event-tile__footer{
+                            .event-odds__header {
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-align-items: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                -webkit-justify-content: space-between;
+                                -ms-flex-pack: justify;
+                                justify-content: space-between;
+                                padding-top: .625em;
+                                padding-left: .625em;
+                                color: #7fc8ff;
+                                .event-odds__title {
+                                    text-transform: uppercase;
+                                }
+                                .event-odds__switch {
+                                    display: -webkit-flex;
+                                    display: -ms-flexbox;
+                                    display: flex;
+                                    -webkit-align-items: center;
+                                    -ms-flex-align: center;
+                                    align-items: center;
+                                    line-height: 1;
+                                    .event-odds__control {
+                                        cursor: pointer;
+                                        padding: .3125em .625em;
+                                        -webkit-transform: translateZ(0);
+                                        transform: translateZ(0);
+                                        transition: -webkit-transform 0.25s ease;
+                                        transition: transform 0.25s ease;
+                                        transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+                                    }
+                                    .event-odds__control {
+                                        cursor: pointer;
+                                        padding: .3125em .625em;
+                                        -webkit-transform: translateZ(0);
+                                        transform: translateZ(0);
+                                        transition: -webkit-transform 0.25s ease;
+                                        transition: transform 0.25s ease;
+                                        transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+                                        .fa {
+                                            display: inline-block;
+                                            font: normal normal normal 14px/1 FontAwesome;
+                                            font-size: inherit;
+                                            text-rendering: auto;
+                                            -webkit-font-smoothing: antialiased;
+                                            -moz-osx-font-smoothing: grayscale;
+                                            .fa-angle-right:before {
+                                                content: "\f105";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .event-odds__content {
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                            }
+                            .event-odds__content {
+                                padding: .625em;
+                            }
+                            
+                            .event-odds__item:not(:last-child) {
+                                margin: 0 3px 0 0;
+                            }
+                            .event-odds__item {
+                                -webkit-flex: 1 1 auto;
+                                -ms-flex: 1 1 auto;
+                                flex: 1 1 auto;
+                            }
+                            .event-odds__item {
+                                border-radius: 1px;
+                                overflow: hidden;
+                                position: relative;
+                                z-index: 0;
+                                cursor: pointer;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-justify-content: space-between;
+                                -ms-flex-pack: justify;
+                                justify-content: space-between;
+                                -webkit-align-items: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                padding: .625em;
+                                transition: background-color .25s ease;
+                            }
+                            .event-odds__item:before {
+                                opacity: .5;
+                                background: #3272b1;
+                                transition: opacity .25s ease;
+                            }
+                            .event-odds__item:before, .event-odds__item:after {
+                                border-radius: inherit;
+                                z-index: -1;
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .c-section {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            border: 1px solid #103654;
+            .c-section__header {
+                position: relative;
+                .c-section-header {
+                    font-size: 16px;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    padding: 7px 10px;
+                    background: #4988b9;
+                    border-bottom: 1px solid #0a2940;
+                    .c-section-header__title {
+                        margin: 0 auto 0 0;
+                        color: #fff;
+                        font-size: .875em;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        span {
+                            width: 100%;
+                        }
+                    }
+                }
+                .b-filters__options {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex: 1 1 auto;
+                    -ms-flex: 1 1 auto;
+                    flex: 1 1 auto;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    padding: 0 8px;
+                    background-color: #4d8ab9;
+                    line-height: 0;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex: 0 0 auto;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    padding: 0;
+                    .sports-content__search-wrap{
+                        position: relative;
+                        width: 200px;
+                        .sports-content__search-icon{
+                            display: inline-block;
+                            position: absolute;
+                            top: 50%;
+                            left: 1em;
+                            font-family: FontAwesome;
+                            color:#1f72af;
+                            -webkit-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                        }
+                        .sports-content__search{
+                            box-sizing: border-box;
+                            padding: .3125em .625em .3125em 2.1875em;
+                            width: 100%;
+                            outline: 0;
+                            border: none;
+                            background-color: #eaf0f6;
+                            font-size: 15px;
+                            color: #1f72af;
+                        }
+                    }
+                }
+            }
+            .c-section__content{
+                .c-events {
+                    background: #fff;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    font-size: 16px;
+                    .c-events__item_head {
+                        background: #d2dee2;
+                        padding-left: 10px;
+                        overflow: visible;
+                    }
+                    .c-events__item {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        position: relative;
+                        -webkit-flex: 1 0 auto;
+                        -ms-flex: 1 0 auto;
+                        flex: 1 0 auto;
+                        -webkit-flex-wrap: wrap;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        overflow: hidden;
+                        border-top: 1px solid #d2dee2;
+                    }
+
+                    .icon {
+                        fill: #2c69a7;
+                        width: 18px;
+                        height: 18px;
+                        -webkit-align-self: center;
+                        -ms-flex-item-align: center;
+                        align-self: center;
+                    }
+                    .langDT17 {
+                        display: inline-block;
+                        width: 21px !important;
+                        height: 21px !important;
+                        background: url(../img/flags-sprite.png) no-repeat 107.1446% 88.9362%;
+                        background-size: 2438.1%;
+                        vertical-align: top;
+                        -webkit-flex-shrink: 0;
+                        -ms-flex-negative: 0;
+                        flex-shrink: 0;
+                    }
+                    .c-events__lang {
+                        background-position: 75.3564% 5.09165%;
+                        width: 17px;
+                        height: 17px;
+                        margin: 0 15px;
+                        -webkit-align-self: center;
+                        -ms-flex-item-align: center;
+                        align-self: center;
+                    }
+                    .c-events__name {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex: 1 1 0;
+                        -ms-flex: 1 1 0px;
+                        flex: 1 1 0;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        padding: 5px 0 5px 9px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 0.875em;
+                        white-space: nowrap;
+                        color: #444;
+                    }
+                    .c-events__name:after {
+                        content: '+';
+                        display: block;
+                        -webkit-flex: 0 0 35px;
+                        -ms-flex: 0 0 35px;
+                        flex: 0 0 35px;
+                        width: 35px;
+                        margin-left: auto;
+                        text-align: center;
+                        font-size: 0.875em;
+                    }
+                    .c-bets {
+                        -webkit-flex: 0 0 53%;
+                        -ms-flex: 0 0 53%;
+                        flex: 0 0 53%;
+                        width: 53%;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: stretch;
+                        -ms-flex-align: stretch;
+                        align-items: stretch;
+                    }
+                    .c-bets__bet {
+                        overflow: initial;
+                        background: none !important;
+                        word-break: break-word;
+                        color: #fff;
+                    }
+                    .c-bets__bet {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        position: relative;
+                        z-index: initial;
+                        cursor: pointer;
+                        -webkit-flex-basis: 16.6666%;
+                        -ms-flex-preferred-size: 16.6666%;
+                        flex-basis: 16.6666%;
+                        -webkit-flex-grow: 1;
+                        -ms-flex-positive: 1;
+                        flex-grow: 1;
+                        -webkit-flex-shrink: 1;
+                        -ms-flex-negative: 1;
+                        flex-shrink: 1;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        min-width: 35px;
+                        min-height: 30px;
+                        margin-right: 1px;
+                        overflow: hidden;
+                        background: #eee;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-size: 0.6875em;
+                        color: #444;
+                    }
+                    .c-events__item_col{
+                        -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                    }
+                    .c-events__date {
+                        padding: .55em 0em .45em;
+                        text-transform: uppercase;
+                        font-size: .625em;
+                        line-height: 1;
+                        color: #286da6;
+                        margin-left: 24px;
+                    }
+                }
+                .c-events__favorite {
+                    position: absolute;
+                    top: 50%;
+                    left: 11px;
+                    z-index: 1;
+                    margin-top: -10px;
+                    font-size: 0.875em;
+                    color: #444;
+                    -webkit-transform: translateX(-30px);
+                    transform: translateX(-30px);
+                    transition: -webkit-transform 0.35s ease;
+                    transition: transform 0.35s ease;
+                    transition: transform 0.35s ease, -webkit-transform 0.35s ease;
+                }
+                .c-events__favorite:before {
+                    content: '\f006';
+                    text-rendering: auto;
+                    font: normal normal normal 0.875em/1 FontAwesome;
+                    font-size: inherit;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+                .c-events__time-info {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    margin-left: 24px;
+                }
+                .c-events__time {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex: 0 0 50px;
+                    -ms-flex: 0 0 50px;
+                    flex: 0 0 50px;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-align-self: center;
+                    -ms-flex-item-align: center;
+                    align-self: center;
+                    width: 50px;
+                    font-size: 0.75em;
+                    color: #397baf;
+                    span{
+                        color: #397baf;
+                    }
+                }
+                .c-events__to-top {
+                    position: relative;
+                    top: -5px;
+                    cursor: pointer;
+                    -webkit-align-self: center;
+                    -ms-flex-item-align: center;
+                    align-self: center;
+                    padding: 0;
+                    margin-left: 9px;
+                    outline: none;
+                    border: none;
+                    background: transparent;
+                    font-size: 9px;
+                    letter-spacing: -0.2px;
+                    color: #b3bcbf;
+                    transition: color 0.3s linear;
+                }
+                .c-events__to-top_line {
+                    padding-top: 8px;
+                }
+                .top-icon {
+                    width: 15px;
+                    height: 15px;
+                    fill: #a0c3e5;
+                }
+                .c-events__name {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex: 1 1 0;
+                    -ms-flex: 1 1 0px;
+                    flex: 1 1 0;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    padding: 5px 0 5px 9px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: 0.875em;
+                    white-space: nowrap;
+                    color: #444;
+                }
+                .c-events__teams {
+                    position: relative;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    span{
+                        color: #397baf;
+                    }
+                }
+                .c-events__teams:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: #397baf;
+                    -webkit-transform: scale3d(0, 1, 0);
+                    transform: scale3d(0, 1, 0);
+                    -webkit-transform-origin: 0 0;
+                    transform-origin: 0 0;
+                    transition: -webkit-transform 0.3s ease;
+                    transition: transform 0.3s ease;
+                    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+                }
+                .c-events__team+.c-events__team:before {
+                    content: ' - ';
+                }
+                .c-events__dop {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    margin: 0 5px;
+                }
+                .c-events__icons {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                }
+                .c-events__ico:first-child {
+                    margin-left: 0;
+                }
+                .c-events__ico_standings {
+                    height: 17px;
+                    color: #6b6b6b;
+                }
+                .c-events__ico_coef-graph {
+                    width: 14px;
+                    height: 13px;
+                }
+                .c-events__ico {
+                    cursor: pointer;
+                    margin: 2.5px 0 1.5px 3px;
+                }
+                .c-events__ico_self_stat {
+                    width: 16px;
+                    height: 13px;
+                }
+                .c-events__more-wrap {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-basis: 65px;
+                    -ms-flex-preferred-size: 65px;
+                    flex-basis: 65px;
+                    -webkit-justify-content: flex-end;
+                    -ms-flex-pack: end;
+                    justify-content: flex-end;
+                }
+                .c-events__more {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    min-width: 30px;
+                    min-height: 30px;
+                    transition: color 0.3s ease, background 0.3s ease;
+                }
+                .c-events__more_events {
+                    color: #397baf;
+                }
+                .c-events__more_events:before {
+                    content: '\f107';
+                    width: 100%;
+                    height: 100%;
+                    -webkit-transform-origin: 50% 53%;
+                    transform-origin: 50% 53%;
+                    transition: -webkit-transform 0.3s ease;
+                    transition: transform 0.3s ease;
+                    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+                }
+                .c-events__more:before {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    text-rendering: auto;
+                    font: normal normal normal 0.875em/1 FontAwesome;
+                    font-size: 1em;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+                .c-events__more_bets {
+                    -webkit-flex: 0 0 35px;
+                    -ms-flex: 0 0 35px;
+                    flex: 0 0 35px;
+                    width: 35px;
+                    text-decoration: underline;
+                    font-size: 0.6875em;
+                    color: #444;
+                }
+                .grayBack .c-bets__bet {
+                    color: #444;
+                }
+                .l-main * {
+                    box-sizing: border-box;
+                }
+                .c-events * {
+                    box-sizing: border-box;
+                }
+                .c-bets__bet {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    position: relative;
+                    z-index: initial;
+                    cursor: pointer;
+                    -webkit-flex-basis: 16.6666%;
+                    -ms-flex-preferred-size: 16.6666%;
+                    flex-basis: 16.6666%;
+                    -webkit-flex-grow: 1;
+                    -ms-flex-positive: 1;
+                    flex-grow: 1;
+                    -webkit-flex-shrink: 1;
+                    -ms-flex-negative: 1;
+                    flex-shrink: 1;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    min-width: 35px;
+                    min-height: 30px;
+                    margin-right: 1px;
+                    overflow: hidden;
+                    background: #eee;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 0.6875em;
+                    color: #444;
+                }
+            }
+            .sports-slider__wrapper {
+                background-color: #1b5785;
+                .b-filters__sports {
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex: 1 1 auto;
+                    -ms-flex: 1 1 auto;
+                    flex: 1 1 auto;
+                    width: 100%;
+                    min-width: 1px;
+                    margin-bottom: 0;
+                    background-color: #1b5785;
+                    .icon {
+                        display: block;
+                        -webkit-flex: 0 0 auto;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 15px;
+                        height: 15px;
+                        margin: 0;
+                        background-repeat: no-repeat;
+                        image-rendering: -webkit-optimize-contrast;
+                        fill: #fff;
+                    }
+                    .b-filters__item_alone {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        padding: 0 15px;
+                        border-right: 1px solid #183451;
+                        .c-events__ico:first-child {
+                            margin-left: 0;
+                        }
+                        .c-events__ico_video {
+                            cursor: pointer;
+                            width: 21px;
+                            height: 13px;
+                            background:url(../img/pages/Icon_live.svg) no-repeat;
+                            margin: 2.5px 0 1.5px 3px;
+                        }
+                    }
+                    .b-filters__item {
+                        box-shadow: inset 0 -2px transparent;
+                        opacity: .65;
+                        transition: opacity .2s ease;
+                    }
+                    .b-filters__carousel{
+                        -webkit-flex: 1 1 auto;
+                        -ms-flex: 1 1 auto;
+                        flex: 1 1 auto;
+                        width: 100%;
+                        min-width: 0;
+                        background: #1a5685;
+                        .swiper-wrapper {
+                            position: relative;
+                            width: calc(100% - 60px);
+                            height: 100%;
+                            z-index: 1;
+                            display: flex;
+                            box-sizing: content-box;
+                            margin: 0 30px !important;
+                        }
+                        .swiper-button-prev{
+                            background-color: #1b5785;
+                            top: 0;
+                            margin: 0;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-justify-content: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-align-items: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-filter: none;
+                            filter: none;
+                            z-index: 50;
+                            width: 27px;
+                            height: 100%;
+                            cursor: pointer;
+                            text-align: center;
+                            line-height: 67px;
+                            color: #fff;
+                            transition: background-color 0.3s;
+                            will-change: background-color;
+                            position: absolute;
+                            outline: none;
+                            opacity: 1;
+                            left: 0;
+                        }
+                        .swiper-button-next{
+                            background-color: #1b5785;
+                            top: 0;
+                            margin: 0;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-justify-content: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-align-items: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-filter: none;
+                            filter: none;
+                            z-index: 50;
+                            width: 27px;
+                            height: 100%;
+                            cursor: pointer;
+                            text-align: center;
+                            line-height: 67px;
+                            color: #fff;
+                            transition: background-color 0.3s;
+                            will-change: background-color;
+                            position: absolute;
+                            outline: none;
+                            opacity: 1;
+                            right: 0;
+                        }
+                        .swiper-button-disabled:after{
+                            opacity: 0.5 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sports_right{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 10005;
+        float: right;
+        padding: 0 0 0 10px;
+        width: 250px;
+        margin: 0;
+        height: 98vh;
+        overflow: auto;
+        .l-main-inner__aside_coupon {
+            // position: absolute;
+            // right: 0;
+            // height: 100%;
+            // width: 250px;
+            // overflow: auto;
+            #sports_right {
+                position: relative;
+                top: 0;
+                height: 100%;
+                right: 0;
+                padding: 0;
+                margin: 0 !important;
+                -webkit-transform: none !important;
+                transform: none !important;
+                width: 250px;
+                bottom: 10px;
+                z-index: 10005;
+                float: right;
+                .iscroll-wrap {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: inherit;
+                    width: inherit;
+                    transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+                    transition-duration: 0ms;
+                    left: 0px;
+                    top: 0px;
+                    padding-bottom: 120px;
+                    .w-social {
+                        margin: 5px 0;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-flex-wrap: wrap;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        .w-social__item {
+                            -webkit-flex: 1 1 auto;
+                            -ms-flex: 1 1 auto;
+                            flex: 1 1 auto;
+                            width: calc(25% - 10px);
+                            margin: 5px 10px;
+                            .w-social__link {
+                                font-size: 12px;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                padding: .75em;
+                                background: #17324b;
+                                color: #fff;
+                                transition: background .25s ease;
+                                .w-social__icon {
+                                    margin: auto;
+                                    font-size: 2em;
+                                }
+                            }
+                        }
+                    }
+                    .w-social__item:first-child, .w-social__item+.w-social__item {
+                        margin-left: 0;
+                    }
+                    .w-social__item:last-child, .w-social__item:nth-child(4n) {
+                        margin-right: 0;
+                    }
+                    #sports_right .banCont {
+                        margin-bottom: 5px;
+                    }
+                    body.betting-main .banCont.latent {
+                        margin-top: 10px;
+                    }
+                    .banCont {
+                        position: relative;
+                        width: 250px;
+                    }
+                    .fz {
+                        margin-bottom: 10px;
+                        background: #1f72af;
+                        border-radius: 0 !important;
+                        padding: 0 10px;
+                        height: 34px;
+                        border-radius: 3px 3px 0 0;
+                        -pie-background: linear-gradient(to top, #3684bd, #0e63a6);
+                        background: #3684bd;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 34px;
+                        color: #fff;
+                    }
+                    .right-banners-block {
+                        -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        margin-top: 5px;
+                    }
+                    .br-banner {
+                        box-sizing: border-box;
+                        padding: 13px;
+                        width: 100%;
+                        margin-bottom: 15px;
+                        background: url(../img/br-banner-bg-decoration.png) top no-repeat #113756;
+                        background-size: cover;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        color: #fff;
+                    }
+                    .br-banner__title {
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
+                    .br-banner-body {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-justify-content: space-between;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        margin-bottom: 13px;
+                        background-image: url(../img/bgvs.png);
+                        background-position: top 14px center;
+                        background-repeat: no-repeat;
+                        background-size: 90px;
+                        .br-banner-team {
+                            width: 70px;
+                            font-size: 9px;
+                            letter-spacing: 0.33px;
+                            .br-banner-team__image {
+                                margin-bottom: 11px;
+                                img {
+                                    max-width: 100%;
+                                }
+                            }
+                            .br-banner-team__title {
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                text-align: center;
+                            }
+                        }
+                        .br-banner-info {
+                            -webkit-align-self: flex-end;
+                            -ms-flex-item-align: end;
+                            align-self: flex-end;
+                            -webkit-transform: translateY(5px);
+                            transform: translateY(5px);
+                            .br-banner-info__time {
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                position: relative;
+                                -webkit-flex-direction: column;
+                                -ms-flex-direction: column;
+                                flex-direction: column;
+                                -webkit-align-items: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                -webkit-justify-content: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                width: 43px;
+                                height: 43px;
+                                margin-bottom: 7px;
+                                border: 1px solid #647786;
+                                border-radius: 50%;
+                                background-color: #113756;
+                                font-size: 10px;
+                            }
+                            .br-banner-info__time:before {
+                                right: 100%;
+                            }
+                            .br-banner-info__time:after {
+                                left: 100%;
+                            }
+                            .br-banner-info__time:after, .br-banner-info__time:before {
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                width: 24px;
+                                height: 1px;
+                                background-color: #95cc37;
+                                -webkit-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                    .br-banner-footer {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-justify-content: space-between;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        padding: 0 8px;
+                        background-color: #23507c;
+                        font-size: 12px;
+                    }
+                    .br-banner-footer__val--left {
+                        padding-right: 10px;
+                        text-align: center;
+                    }
+                    .br-banner a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                    .br-banner-footer__btn {
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        position: relative;
+                        z-index: 0;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        min-height: 32px;
+                        margin-top: -1px;
+                        margin-bottom: -1px;
+                        padding-left: 13px;
+                        padding-right: 13px;
+                        box-shadow: 0 0 25px rgba(0,0,0,0.25);
+                        background-color: #6c952b;
+                        font-size: 10px;
+                        transition: all 0.5s;
+                    }
+                    .br-banner-footer__val--right {
+                        padding-left: 10px;
+                        text-align: center;
+                    }
+                    .br-banner-footer__val {
+                        -webkit-flex-grow: 1;
+                        -ms-flex-positive: 1;
+                        flex-grow: 1;
+                        -webkit-flex-shrink: 1;
+                        -ms-flex-negative: 1;
+                        flex-shrink: 1;
+                    }
+                    .br-banner-footer__btn:before {
+                        -webkit-transform: skew(24deg);
+                        transform: skew(24deg);
+                    }
+                    .br-banner-footer__btn:after, .br-banner-footer__btn:before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: -1;
+                        background-color: #6c952b;
+                        transition: all 0.5s;
+                        -webkit-transform-origin: bottom;
+                        transform-origin: bottom;
+                    }
+                    .br-banner-footer__btn:after {
+                        -webkit-transform: skew(-24deg);
+                        transform: skew(-24deg);
+                    }
+                    .br-banner-info__ico{
+                        .icon {
+                            fill: #fff;
+                            display: block;
+                            width: 24px;
+                            height: 24px;
+                            margin: 8px auto 0;
+                        }
+                    }
+                }
+            }
+        }
+        .l-main-inner__aside {
+            -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+        }
+    }
+}
