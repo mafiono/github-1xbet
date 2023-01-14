@@ -9,7 +9,7 @@ import "./assets/scss/plugins/extensions/swiper.scss"
 import 'animate.css/animate.css'
 
 
-const App = props => {
+const App = _props => {
   return <Router />
 }
 
