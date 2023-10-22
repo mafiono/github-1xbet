@@ -58,6 +58,7 @@
     "mdbreact": "4.27.0",
     "moment": "2.24.0",
     "namor": "2.0.4",
+    "node-sass": "^9.0.0",
     "postcss-rtl": "1.7.3",
     "prismjs": "1.29.0",
     "prop-types": "15.7.2",
@@ -151,7 +152,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "sass-loader": "^13.3.2"
   },
   "browserslist": {
     "production": [
